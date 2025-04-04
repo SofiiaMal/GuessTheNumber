@@ -1,0 +1,70 @@
+@import url("../css/gameScreen.css");
+@import url("../css/startScreen.css");
+@import url("../css/resultScreen.css");
+@import url("../css/animations.css");
+@import url("../css/colorSheet.css");
+
+@font-face{
+    font-family: Mighty Souly;
+    src: url("../Misc/MightySouly-lxggD.ttf");
+}
+
+
+
+body{
+    background-image: url("../Images/darkBackground.png");
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: "Mighty Souly";
+    cursor: url(../Misc/mouse.png), auto;
+}
+
+p:hover{
+    cursor:  url(../Misc/mouse.png), auto;
+}
+
+.startCardDecorBottom{
+    cursor: url(../Misc/pointy.png), auto;
+}
+
+#giveUpBtn{
+    cursor: url(../Misc/pointy.png), auto;
+}
+
+.diceSingle{
+    cursor: url(../Misc/pointy.png), auto;
+}
+
+button{
+    cursor: url(../Misc/pointy.png), auto;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.targetArea{
+    width : 1200px;
+    height : 600px;
+}
+
+.colorModeBtn{
+    z-index: 999;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-family: "Mighty Souly";
+    text-align: center;
+    width: 70px;
+    height: auto;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: var(--text-color);
+}
+
+.colorModeBtn:active{
+    filter: grayscale(0.5);
+}
+
