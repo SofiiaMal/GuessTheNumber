@@ -1,0 +1,221 @@
+@import url("/GuessTheNumber/css/colorSheet.css");
+
+.gameScreen{
+    width: 206vh;
+    height: 97.5vh;
+    display: grid;
+    place-items: center;
+}
+
+/* SIDE PANEL */
+.sidePanel{
+    float: left;
+    height: 600px;
+    width: 300px;
+    background-color: var(--panel-dark);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 2fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "heartBar"
+    "diceGuess"
+    "hint"; 
+}
+.heartBar { 
+    grid-area: heartBar; 
+    background-color: var(--panel-light);
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+.heartBar img{
+    width: 60px;
+    height: auto;
+    margin-top: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.diceGuess { 
+    grid-area: diceGuess; 
+    background-color: var(--panel-light);
+    margin: 20px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+}
+.diceGuess img{
+    width: 230px;
+    height: auto;
+}
+.hint { 
+    grid-area: hint; 
+    background-color: var(--panel-light);
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 40px;
+    line-height: 0;
+    text-align: center;
+}
+.gameModeName{
+    position: absolute;
+    left: 490px;
+    top: -70px;
+    font-size: 90px;
+}
+.giveUp{
+    position: absolute;
+    font-size: 60px;
+    right: 100px;
+    top: 550px;
+}
+
+/* DICE PANEL GENERAL */
+
+.diceSingle{
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: var(--panel-light);
+    margin: 10px;
+}
+
+.diceClassic {
+    position: relative;
+}
+
+/* GUESS PANEL CLASSIC*/
+
+.guessPanelClassic{
+    float: left;
+    height: 490px;
+    width: 700px;
+    background-color: var(--panel-dark);
+    margin-left: 85px;
+    margin-right: 10px;
+    margin-top: 55px;
+    border-radius: 25px;
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "diceClassic1 diceClassic2 diceClassic3"
+    "diceClassic4 diceClassic5 diceClassic6"; 
+
+}
+.diceClassic1{
+    grid-area: diceClassic1;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-top-left-radius: 20px;
+}
+.diceClassic2{
+    grid-area: diceClassic2;
+    margin-top: 20px;
+}
+.diceClassic3{
+    grid-area: diceClassic3;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 20px;
+}
+.diceClassic4{
+    grid-area: diceClassic4;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+}
+.diceClassic5{
+    grid-area: diceClassic5;
+    margin-bottom: 20px;
+}
+.diceClassic6{
+    grid-area: diceClassic6;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* GUESS PANEL HINTED */
+
+.hintedPanelSide{
+    float: left;
+    height: 490px;
+    width: 90px;
+    background-color: var(--panel-dark);
+    margin-top: 55px;
+    margin-left: 85px;
+    border-radius: 25px;
+}
+.diceCaseHinted{
+    float: left;
+    height: 490px;
+    width: 490px;
+    background-color: var(--panel-dark);
+    margin-left: 20px;
+    margin-right: -65px;
+    margin-top: 55px;
+    border-radius: 25px;
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "diceHinted1 diceHinted2 diceHinted3"
+    "diceHinted4 diceHinted5 diceHinted6"
+    "diceHinted7 diceHinted8 diceHinted9";
+}
+.diceCaseHinted img{
+    width: 100px;
+    height: auto;
+}
+.diceHinted1 { 
+    grid-area: diceHinted1; 
+    margin-top: 20px;
+    margin-left: 20px;
+    border-top-left-radius: 20px;
+}
+.diceHinted2 { 
+    grid-area: diceHinted2; 
+    margin-top: 20px;
+}
+.diceHinted3 { 
+    grid-area: diceHinted3; 
+    margin-top: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 20px;
+}
+.diceHinted4 { 
+    grid-area: diceHinted4; 
+    margin-left: 20px;
+}
+.diceHinted5 { 
+    grid-area: diceHinted5; 
+}
+.diceHinted6 { 
+    grid-area: diceHinted6;
+    margin-right: 20px;
+ }
+.diceHinted7 { 
+    grid-area: diceHinted7; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+}
+.diceHinted8 { 
+    grid-area: diceHinted8; 
+    margin-bottom: 20px;
+}
+.diceHinted9 { 
+    grid-area: diceHinted9; 
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-bottom-right-radius: 20px;
+}

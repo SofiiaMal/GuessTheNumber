@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>GuessNumber</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UFT-8" />
+        <link rel="stylesheet" href="/GuessTheNumber/css/style.css">
+        <script src="/GuessTheNumber/javaScript/script.js" type="module" defer></script>
+
+    </head>
+
+    <body class="">
+        <div class="colorMode">
+            <button id="colorModeBtn" class="colorModeBtn">Dark</button>
+        </div>
+
+        <div id="startScreen" class="startScreen ">
+            
+            <div class="targetArea">
+                <div class="startDecor">
+                </div>
+
+                <div class="startPanel startClassic">
+                    <div class="startCardDecorTop">
+                        <span>Classic</span>
+                    </div>
+                    <div class="startCardMiddle">
+                        <p>- Three hearts</p>
+                        <p>- six dices</p>
+                        <p>- No special rulles</p>
+                    </div>
+            
+                    <div class="startCardDecorBottom">
+                        <span id="startClassicBtn">Start Game</span>
+                    </div>
+                </div>
+
+                <div class="startDecor">
+                </div>
+
+                <div class="startPanel startHinted">
+                    <div class="startCardDecorTop hinted">
+                        <span>Hinted</span>
+                    </div>
+                    <div class="startCardMiddle">
+                        <p>- Three hearts</p>
+                        <p>- nine dices</p>
+                        <p>- Shown if the</p>	
+                        <p>answer is higher</p>     
+                        <p>or lower</p>    
+                    </div>
+
+                    <div class="startCardDecorBottom hinted">
+                        <span id="startHintedBtn">Start Game</span>
+                    </div>
+                </div>
+
+                <div class="startDecor">
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="gameScreen" class="gameScreen hidden">
+            <div class="targetArea">
+                <div class="sidePanel ">
+                    <p id="gameModeName" class="gameModeName">Classic</p>
+                    <p id="giveUpBtn" class="giveUp">Give up ></p>
+
+
+                    <div class="heartBar">
+                        <img id="heart1" src="/GuessTheNumber/Images/darkHeart.png" alt="">
+                        <img id="heart2" src="/GuessTheNumber/Images/darkHeart.png" alt="">
+                        <img id="heart3" src="/GuessTheNumber/Images/darkHeart.png" alt="">
+                    </div>
+                    <div class="diceGuess"><img id="diceGuessGame" src="/GuessTheNumber/Images/darkDiceGuess.png" alt=""></div>
+                    <div class="hint"><p id="theHint">Good Luck!</p></div>
+                </div>
+
+                <div id="guessPanelClassic" class="guessPanelClassic hidden">
+                    <div class="diceClassic1 diceSingle"><img class="diceClassic classic1" src="/GuessTheNumber/Images/darkDice1.png" alt=""></div>
+                    <div class="diceClassic2 diceSingle"><img class="diceClassic classic2" src="/GuessTheNumber/Images/darkDice2.png" alt=""></div>
+                    <div class="diceClassic3 diceSingle"><img class="diceClassic classic3" src="/GuessTheNumber/Images/darkDice3.png" alt=""></div>
+                    <div class="diceClassic4 diceSingle"><img class="diceClassic classic4" src="/GuessTheNumber/Images/darkDice4.png" alt=""></div>
+                    <div class="diceClassic5 diceSingle"><img class="diceClassic classic5" src="/GuessTheNumber/Images/darkDice5.png" alt=""></div>
+                    <div class="diceClassic6 diceSingle"><img class="diceClassic classic6" src="/GuessTheNumber/Images/darkDice6.png" alt=""></div>
+                </div>
+
+                <div id="guessPanelHinted" class="guessPanelHinted gidden">
+                    <div class="hintedPanelSide"></div>
+                    <div class="diceCaseHinted">
+                        <div class="diceHinted1 diceSingle"><img class="diceHinted hinted1" src="/GuessTheNumber/Images/darkDice1.png" alt=""></div>
+                        <div class="diceHinted2 diceSingle"><img class="diceHinted hinted2" src="/GuessTheNumber/Images/darkDice2.png" alt=""></div>
+                        <div class="diceHinted3 diceSingle"><img class="diceHinted hinted3" src="/GuessTheNumber/Images/darkDice3.png" alt=""></div>
+                        <div class="diceHinted4 diceSingle"><img class="diceHinted hinted4" src="/GuessTheNumber/Images/darkDice4.png" alt=""></div>
+                        <div class="diceHinted5 diceSingle"><img class="diceHinted hinted5" src="/GuessTheNumber/Images/darkDice5.png" alt=""></div>
+                        <div class="diceHinted6 diceSingle"><img class="diceHinted hinted6" src="/GuessTheNumber/Images/darkDice6.png" alt=""></div>
+                        <div class="diceHinted7 diceSingle"><img class="diceHinted hinted7" src="/GuessTheNumber/Images/darkDice7.png" alt=""></div>
+                        <div class="diceHinted8 diceSingle"><img class="diceHinted hinted8" src="/GuessTheNumber/Images/darkDice8.png" alt=""></div>
+                        <div class="diceHinted9 diceSingle"><img class="diceHinted hinted9" src="/GuessTheNumber/Images/darkDice9.png" alt=""></div>
+                    </div>
+                    <div class="hintedPanelSide"></div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="gameResult" class="gameResult hidden">
+            <div class="darkenBackground"></div>
+            <div class="resultPopUp">
+                
+                <div class="resultPanel">
+                    <div class="resultText">
+                        <p id="resultTop">ConGratulations!</p>
+                        <p id="resultMiddle">You have guessed correctly</p>
+                        <p id="clickAnywhere" class="pulsing">click anywhere to continue</p>
+                    </div>
+                    <div class="resultIcon resultWon hidden">
+                        <img src="/GuessTheNumber/Images/Crown.png" alt="">
+                    </div>
+                    <div class="resultIcon resultLost hidden">
+                        <img id="resultLostIcon" src="/GuessTheNumber/Images/darkDiceGuess.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

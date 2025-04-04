@@ -1,0 +1,13 @@
+:root{
+    --text-color: #e4ac00;
+    --main-color: #5e0000;
+    --panel-dark: #141414;
+    --panel-light: #333333;
+}
+
+.lightMode{
+    --text-color: #ff681c;
+    --main-color: #c1f8f1;
+    --panel-dark: #e0e0e0;
+    --panel-light: #f6f6f6;
+}

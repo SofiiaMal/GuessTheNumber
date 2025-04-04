@@ -1,0 +1,60 @@
+.pulsing{
+    animation-name: pulsing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsing{
+    0%{
+        transform: scale(1);
+        top: 0px;
+        right: 30px;
+    }
+    25%{
+        transform: scale(1.1);
+        top: -5px;
+        right: 45px;
+        
+    }
+    50%{
+        transform: scale(1);
+        top: 0px;
+        right: 30px;
+    }
+    75%{
+        transform: scale(1.1);
+        top: -5px;
+        right: 45px;
+      
+    }
+    100%{
+        transform: scale(1);
+        top: 0px;
+        right: 30px;
+
+    }
+}
+
+.wrongDice{
+    filter: grayscale(1);
+    animation-name: wrongDice;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes wrongDice{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    80%{filter: opacity(1);}
+    100%{filter: opacity(0.6);}
+    
+}
